@@ -2,7 +2,7 @@
 # CSC675-775 Section 03 Database Systems
 Welcome to Database Systems!. Please modify this README file with the following info: 
 
-1. Your name, and student id here. Otherwise, I don't know who you are and I cannot grade your work
+1. Mitchel Baker, 917679066. Otherwise, I don't know who you are and I cannot grade your work
 
 2. Update this table of assignments. Set to done after one of the assignments is completed:
 
@@ -12,7 +12,7 @@ Welcome to Database Systems!. Please modify this README file with the following 
 | Milestone #1             |        not completed       |
 | Milestone #2             |        not completed       |
 | Milestone #3             |        not completed       |
-| Extra-credit              |        not completed       |
+| Extra-credit              |        not completed      |
 
 
 If one of the milestones, or extra-credit assignment, is not set to "completed" by its due date, 
