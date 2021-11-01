@@ -1329,8 +1329,8 @@ DELIMITER $$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`authenticated_users_AFTER_INSERT`
-AFTER INSERT ON `csc675db`.`authenticated_users`
+TRIGGER `atmManagementSystemDB`.`authenticated_users_AFTER_INSERT`
+AFTER INSERT ON `atmManagementSystemDB`.`authenticated_users`
 FOR EACH ROW
 BEGIN	
 	UPDATE `general_users`
@@ -1341,8 +1341,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`atm_accounts_AFTER_INSERT`
-AFTER INSERT ON `csc675db`.`atm_accounts`
+TRIGGER `atmManagementSystemDB`.`atm_accounts_AFTER_INSERT`
+AFTER INSERT ON `atmManagementSystemDB`.`atm_accounts`
 FOR EACH ROW
 BEGIN
 	UPDATE `bank_accounts`
@@ -1353,8 +1353,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`atm_accounts_BEFORE_DELETE`
-BEFORE DELETE ON `csc675db`.`atm_accounts`
+TRIGGER `atmManagementSystemDB`.`atm_accounts_BEFORE_DELETE`
+BEFORE DELETE ON `atmManagementSystemDB`.`atm_accounts`
 FOR EACH ROW
 BEGIN
 	UPDATE `bank_accounts`
@@ -1365,8 +1365,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`atm_machines_AFTER_INSERT`
-AFTER INSERT ON `csc675db`.`atm_machines`
+TRIGGER `atmManagementSystemDB`.`atm_machines_AFTER_INSERT`
+AFTER INSERT ON `atmManagementSystemDB`.`atm_machines`
 FOR EACH ROW
 BEGIN
 	DECLARE start_row INT DEFAULT 0;
@@ -1386,8 +1386,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`atm_admins_AFTER_INSERT`
-AFTER INSERT ON `csc675db`.`atm_admins`
+TRIGGER `atmManagementSystemDB`.`atm_admins_AFTER_INSERT`
+AFTER INSERT ON `atmManagementSystemDB`.`atm_admins`
 FOR EACH ROW
 BEGIN
 	UPDATE `authenticated_users` SET is_admin = 1 
@@ -1397,8 +1397,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`atm_admins_BEFORE_DELETE`
-BEFORE DELETE ON `csc675db`.`atm_admins`
+TRIGGER `atmManagementSystemDB`.`atm_admins_BEFORE_DELETE`
+BEFORE DELETE ON `atmManagementSystemDB`.`atm_admins`
 FOR EACH ROW
 BEGIN
 	UPDATE `authenticated_users` SET is_admin = 0 
@@ -1408,8 +1408,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`atm_transactions_AFTER_INSERT`
-AFTER INSERT ON `csc675db`.`atm_transactions`
+TRIGGER `atmManagementSystemDB`.`atm_transactions_AFTER_INSERT`
+AFTER INSERT ON `atmManagementSystemDB`.`atm_transactions`
 FOR EACH ROW
 BEGIN
 	DECLARE atm_transaction_id INT;
@@ -1430,8 +1430,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`crypto_accounts_AFTER_INSERT`
-AFTER INSERT ON `csc675db`.`crypto_accounts`
+TRIGGER `atmManagementSystemDB`.`crypto_accounts_AFTER_INSERT`
+AFTER INSERT ON `atmManagementSystemDB`.`crypto_accounts`
 FOR EACH ROW
 BEGIN
 	DECLARE new_num_crypto_accts INT DEFAULT 0;
@@ -1445,8 +1445,8 @@ END$$
 USE `atmManagementSystemDB`$$
 CREATE
 DEFINER=`root`@`localhost`
-TRIGGER `csc675db`.`crypto_loan_payments_AFTER_INSERT`
-AFTER INSERT ON `csc675db`.`crypto_loan_payments`
+TRIGGER `atmManagementSystemDB`.`crypto_loan_payments_AFTER_INSERT`
+AFTER INSERT ON `atmManagementSystemDB`.`crypto_loan_payments`
 FOR EACH ROW
 BEGIN
 	-- cur_amount_paid is the amount_paid in new crypto loan payment
