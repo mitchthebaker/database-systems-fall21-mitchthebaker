@@ -6,7 +6,7 @@ USE `sql3457683`;
 DELIMITER $$
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`authenticated_users_AFTER_INSERT`
 AFTER INSERT ON `sql3457683`.`authenticated_users`
 FOR EACH ROW
@@ -18,7 +18,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`atm_accounts_AFTER_INSERT`
 AFTER INSERT ON `sql3457683`.`atm_accounts`
 FOR EACH ROW
@@ -30,7 +30,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`atm_accounts_BEFORE_DELETE`
 BEFORE DELETE ON `sql3457683`.`atm_accounts`
 FOR EACH ROW
@@ -42,7 +42,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`atm_machines_AFTER_INSERT`
 AFTER INSERT ON `sql3457683`.`atm_machines`
 FOR EACH ROW
@@ -63,7 +63,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`atm_admins_AFTER_INSERT`
 AFTER INSERT ON `sql3457683`.`atm_admins`
 FOR EACH ROW
@@ -74,7 +74,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`atm_admins_BEFORE_DELETE`
 BEFORE DELETE ON `sql3457683`.`atm_admins`
 FOR EACH ROW
@@ -85,7 +85,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`atm_transactions_AFTER_INSERT`
 AFTER INSERT ON `sql3457683`.`atm_transactions`
 FOR EACH ROW
@@ -107,7 +107,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`crypto_accounts_AFTER_INSERT`
 AFTER INSERT ON `sql3457683`.`crypto_accounts`
 FOR EACH ROW
@@ -122,7 +122,7 @@ END$$
 
 USE `sql3457683`$$
 CREATE
-DEFINER=`sql3457683`@`remotemysql.com`
+DEFINER=`sql3457683`@`sql3.freemysqlhosting.net`
 TRIGGER `sql3457683`.`crypto_loan_payments_AFTER_INSERT`
 AFTER INSERT ON `sql3457683`.`crypto_loan_payments`
 FOR EACH ROW
