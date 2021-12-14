@@ -2,7 +2,7 @@
 -- Author: Mitchel Baker 
 -- Purpose: insert sample data into each table so that we can test the integrity and relationships of the database system
 
-USE atmManagementSystemDB;
+USE `atmManagementSystemDB`;
 
 -- inserts for general users 
 INSERT INTO general_users (email, full_name, first_name, last_name, is_authenticated) VALUES ('test1@mail.com', 'Emmett Ravenna', 'Emmett', 'Ravenna', 0);
@@ -24,16 +24,16 @@ INSERT INTO banks (name, address) VALUES ('Green Valley Holdings Inc.', '3723 Di
 INSERT INTO banks (name, address) VALUES ('Celestial Financial', '2697 Weissnat Fords, Suite 438, 28022, Ettieland, New York, United States');
 
 -- inserts for bank accounts 
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (333638385, 1, 1);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (271002691, 1, 2);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (389635060, 2, 3);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (877567925, 2, 4);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (627989892, 3, 5);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (180950494, 3, 6);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (951358377, 4, 7);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (142869879, 4, 8);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (710326016, 5, 9);
-INSERT INTO bank_accounts (routing_number, bank_id, user_id) VALUES (610391484, 5, 10);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (333638385, 1, 1, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (271002691, 1, 2, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (389635060, 2, 3, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (877567925, 2, 4, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (627989892, 3, 5, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (180950494, 3, 6, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (951358377, 4, 7, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (142869879, 4, 8, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (710326016, 5, 9, 0);
+INSERT INTO bank_accounts (routing_number, bank_id, user_id, is_verified) VALUES (610391484, 5, 10, 0);
 
 -- inserts for user authentication methods 
 INSERT INTO user_auth_methods (type, is_international, user_id) VALUES ('mobile', 1, 1);

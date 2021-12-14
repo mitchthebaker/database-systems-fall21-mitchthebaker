@@ -3,7 +3,7 @@
 -- Purpose: this file will create UPDATE/DELETE queries on all tables in order to test their integrity
 
 -- specify the database which we are performing the following queries on
-USE atmManagementSystemDB;
+USE `atmManagementSystemDB`;
 
 -- 1. Testing general_users table 
 DELETE FROM general_users WHERE user_id = 10;

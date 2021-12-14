@@ -776,7 +776,7 @@ DEFAULT CHARACTER SET = utf8mb3;
 CREATE TABLE IF NOT EXISTS `atmManagementSystemDB`.`checking_bank_permissions` (
   `checking_bank_permissions_id` INT NOT NULL AUTO_INCREMENT,
   `transaction_action_id` INT NOT NULL,
-  `checking_account_id` INT NOT NULL,
+  `checking_account_id` INT NULL,
   PRIMARY KEY (`checking_bank_permissions_id`),
   INDEX `fk_checking_account_id_idx` (`checking_account_id` ASC),
   INDEX `fk_permissions_transaction_action_id_idx` (`transaction_action_id` ASC),
@@ -1134,7 +1134,7 @@ DEFAULT CHARACTER SET = utf8mb3;
 CREATE TABLE IF NOT EXISTS `atmManagementSystemDB`.`lending_protocol_connections` (
   `protocol_id` INT NOT NULL,
   `crypto_loan_id` INT NOT NULL,
-  `crypto_account_id` INT NOT NULL,
+  `crypto_account_id` INT NULL,
   PRIMARY KEY (`protocol_id`, `crypto_loan_id`),
   INDEX `fk_crypto_loan_id_idx` (`crypto_loan_id` ASC),
   INDEX `fk_crypto_account_id_idx` (`crypto_account_id` ASC),
@@ -1226,7 +1226,7 @@ DEFAULT CHARACTER SET = utf8mb3;
 CREATE TABLE IF NOT EXISTS `atmManagementSystemDB`.`savings_bank_permissions` (
   `savings_bank_permissions_id` INT NOT NULL AUTO_INCREMENT,
   `transaction_action_id` INT NOT NULL,
-  `savings_account_id` INT NOT NULL,
+  `savings_account_id` INT NULL,
   PRIMARY KEY (`savings_bank_permissions_id`),
   INDEX `fk_savings_account_id_idx` (`savings_account_id` ASC),
   INDEX `fk_savings_bank_permissions_transaction_action_id_idx` (`transaction_action_id` ASC),
@@ -1467,3 +1467,4 @@ END$$
 
 
 DELIMITER ;
+
